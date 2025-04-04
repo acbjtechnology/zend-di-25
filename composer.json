@@ -15,7 +15,7 @@
     "require": {
         "php": ">=7.3",
         "acbjtechnology/zend-code-25": "@dev",
-        "zendframework/zend-stdlib": "~2.5"
+        "acbjtechnology/zend-stdlib-25": "@dev"
     },
     "require-dev": {
         "zendframework/zend-config": "~2.5",
@@ -57,6 +57,23 @@
                 "autoload": {
                     "psr-4": {
                         "Zend\\Code\\": "src/"
+                    }
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-stdlib-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-stdlib-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
                     }
                 }
             }
